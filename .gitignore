@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+# Training artifacts: regeneratable, not source. Only the active model
+# (sac_claw.zip) is tracked; checkpoints, the replay buffer, and the
+# archived catch+deliver task's models are not.
+sac_claw_buffer.pkl
+sac_claw_*.zip
+!sac_claw.zip
+sac_claw_stage*_best/
+archive_robot_env/
